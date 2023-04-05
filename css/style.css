@@ -8,10 +8,14 @@
 /*maim*/
 
 .cuerpo{
-    background-color: rgb(223, 223, 223);
+    background-color: #ffe4ae;
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif bold;
+}
+
+.cuerpo-bg{
+    background-color: #ffe4ae;
 }
 
 .contenedor-cuerpo{
@@ -23,7 +27,7 @@
 }
 .titulo-inicio{
     margin-top: 20px;
-    width: 1472px;
+    width: 100%;
     height: 50px;
     background-color: white;
     text-align: center;
@@ -46,12 +50,19 @@ justify-content: center;}
     width: 350px;
     height: 460px;
     padding: 20px;
+    transition: 0.5ms;
 }
 .destacado-t img{
     margin-top: 8px;
     width: 100%;
     height: 75%;
     object-fit: cover;
+}
+
+.destacado-t:hover{
+    background-color: #fbf0e4;
+    border: dashed;
+    border-color: #ffb731;    
 }
 
 .destacado-t h3{
@@ -101,6 +112,12 @@ justify-content: center;}
 .pie-p{
     margin-top: 30px;
 }
+@media (max-width:1512px){
+    .destacado-t{
+        width: 300px;
+        height: 400px;
+    }
+}
 
 @media (max-width:850px){
     .pie-contenedor{
@@ -113,6 +130,10 @@ justify-content: center;}
     }
     .pie .pie-columnas h3{
         font-size: 24px;
+    }
+    .destacado-t{
+        width: 270px;
+        height: 400px;
     }
 }
 
@@ -131,6 +152,36 @@ justify-content: center;}
     margin: 70px 
 }
 
+
+/*Servicios t-servi*/
+
+
+
+.servi-section{
+    width: 100%;
+}
+
+.servi-h1{
+    width: 100%;
+}
+
+.t-servi{
+    margin: 12px;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    transition: 0.5ms;
+}
+
+.t-servi img{
+    margin-top: 8px;
+    width: 75%;
+    object-fit:contain;
+}
+
+
+
+/*Fin Servicios t-servi*/
 
 /*Formulario Contactos*/
 .formulario{
